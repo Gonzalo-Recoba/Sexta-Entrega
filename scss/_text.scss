@@ -1,0 +1,116 @@
+/*_text.scss*/
+
+//---------------------TIPOGRAFÍAS---------------------
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url("https://use.typekit.net/fgl2ufc.css");
+
+//Fonts
+$mainFont: 'fira-sans', sans-serif;
+$secondaryFont: 'raleway', sans-serif;
+
+//Krona One - Google Fonts
+.ff-ko{
+    font-family: Krona One,sans-serif; 
+    }
+
+//Raleway - Adobe Fonts
+.ff-rw{
+    font-family: raleway, sans-serif;
+    }
+
+//Fira Sans - Adobe Fonts
+.ff-fs{
+    font-family: fira-sans,sans-serif;
+    }
+
+//Fira Sans 2- Adobe Fonts
+.ff-fs-2{
+    font-family: fira-sans-2, sans-serif;
+    }
+
+//Fira Sans Condensed
+.ff-fsc{
+    font-family: fira-sans-condensed, sans-serif;
+    }
+    
+//Fira Sans Condensed
+.ff-fscondensed-2{
+    font-family: fira-sans-condensed-2, sans-serif;
+    }
+
+//Fira Sans Compressed
+.ff-fscompressed{
+    font-family: fira-sans-compressed, sans-serif;
+    }
+
+//Fira Sans Compressed 2
+.ff-fscompressed-2{
+    font-family: fira-sans-compressed-2, sans-serif;
+}
+
+
+//text sizing
+
+$textXs: 0.5rem;
+$textSm: 0.8rem;
+$textMd: 1rem;
+$textLg: 1.5rem;
+$textXl: 2rem;
+$textXXl: 2.5rem;
+
+//Font weight
+$bold: 600;
+$regular: 400;
+$light: 300;
+
+
+
+//Font Weight
+.fw-100{
+    font-weight: 100;
+    }
+.fw-200{
+    font-weight: 200;
+    }
+.fw-300{
+    font-weight: 300;
+    }
+.fw-400{
+    font-weight: 400;
+    }
+.fw-500{
+    font-weight: 500;
+    }
+.fw-600{
+    font-weight: 600;
+    }
+.fw-700{
+    font-weight: 700;
+    }
+.fw-800{
+    font-weight: 800;
+    }
+.fw-900{
+    font-weight: 900;
+    }
+
+
+//Font Style
+.fs-i{
+    font-style: italic;
+    }
+.fs-n{
+    font-style: normal;
+    }
+
+
+
+
+.text-skyblue{
+    color: $mainColor; 
+    }
+.text-justify{
+    text-align: justify;
+    }
+    
+
