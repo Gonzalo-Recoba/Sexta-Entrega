@@ -1,4 +1,4 @@
-/*_text.scss*/
+/*☺ _text.scss*/
 
 //---------------------TIPOGRAFÍAS---------------------
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
@@ -8,49 +8,41 @@
 $mainFont: 'fira-sans', sans-serif;
 $secondaryFont: 'raleway', sans-serif;
 
+
 //Krona One - Google Fonts
 .ff-ko{
-    font-family: Krona One,sans-serif; 
-    }
+    font-family: Krona One,sans-serif;}
 
 //Raleway - Adobe Fonts
 .ff-rw{
-    font-family: raleway, sans-serif;
-    }
+    font-family: raleway, sans-serif;}
 
 //Fira Sans - Adobe Fonts
 .ff-fs{
-    font-family: fira-sans,sans-serif;
-    }
+    font-family: fira-sans,sans-serif;}
 
 //Fira Sans 2- Adobe Fonts
 .ff-fs-2{
-    font-family: fira-sans-2, sans-serif;
-    }
+    font-family: fira-sans-2, sans-serif;}
 
 //Fira Sans Condensed
 .ff-fsc{
-    font-family: fira-sans-condensed, sans-serif;
-    }
+    font-family: fira-sans-condensed, sans-serif;}
     
 //Fira Sans Condensed
 .ff-fscondensed-2{
-    font-family: fira-sans-condensed-2, sans-serif;
-    }
+    font-family: fira-sans-condensed-2, sans-serif;}
 
 //Fira Sans Compressed
 .ff-fscompressed{
-    font-family: fira-sans-compressed, sans-serif;
-    }
+    font-family: fira-sans-compressed, sans-serif;}
 
 //Fira Sans Compressed 2
 .ff-fscompressed-2{
-    font-family: fira-sans-compressed-2, sans-serif;
-}
+    font-family: fira-sans-compressed-2, sans-serif;}
 
 
 //text sizing
-
 $textXs: 0.5rem;
 $textSm: 0.8rem;
 $textMd: 1rem;
@@ -58,10 +50,13 @@ $textLg: 1.5rem;
 $textXl: 2rem;
 $textXXl: 2.5rem;
 
+
 //Font weight
-$bold: 600;
-$regular: 400;
+$extraLight: 200;
 $light: 300;
+$regular: 400;
+$bold: 600;
+$extaBold: 800;
 
 
 
@@ -107,10 +102,42 @@ $light: 300;
 
 
 .text-skyblue{
-    color: $mainColor; 
+    color: $colorPrincipal;
+    color: map-get($map: $color, $key: "principal")
     }
 .text-justify{
     text-align: justify;
     }
+
+
+@mixin texto($fuente, $tamano, $alineacion, $anchoTexto, $interlineado, $estilo){
+    font-family: $fuente;
+    font-size: $tamano;
+    text-align: $alineacion;
+    font-weight: $anchoTexto;
+    line-height: $interlineado;
+    font-style: $estilo;
+}
+
+.modal-title{
+    @include texto($mainFont, 2rem, center, $bold, 2.2rem, normal)
+}
+.descripcion-destino{
+    @include texto($secondaryFont, 1rem, justify, $light, 1.2rem, normal)
+}
+.precio-destino{
+    @include texto($secondaryFont, 1.3rem, center, $regular, 1.5rem, normal)
+} 
+
+
+.tituloPrincipal{
+    @include texto($mainFont, 2.5rem, center, $regular, 2.7rem, normal)
+}
+
+.texto-form{
+    @include texto($mainFont, 1.5rem, center, $regular, 1.7rem, normal)
+}
+
+
     
 
